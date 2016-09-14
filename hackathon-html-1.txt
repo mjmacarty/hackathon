@@ -1,0 +1,31 @@
+The whole internet is mostly based on ten html tags:
+<h1> - </h6>
+<p></p>
+<ul></ul>
+<li></li>
+<b></b> | <strong></strong>
+<i></i> | <em></em>
+<a></a>
+<div></div>
+<span></span>
+<br>
+<hr> 
+
+Ok, so that's 11 but 10 sounds better!
+
+Styles
+background, color, images
+font-families
+font-size
+font-weight
+identifying elements with class and id
+
+
+Javascript
+HTML is static --> it doesn't "do" anything. JavaScript does stuff to HTML.
+JavaScript "happens" with an HTML tag --> <script></script> 
+You may see some examples with a "type" attribute (text/javascript), but this is not needed or expected in HTML5
+
+
+
+
