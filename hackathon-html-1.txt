@@ -1,4 +1,4 @@
-The whole internet is mostly based on ten html tags:
+The whole internet is mostly based on a dozen html tags:
 <h1> - </h6>
 <p></p>
 <ul></ul>
@@ -9,9 +9,10 @@ The whole internet is mostly based on ten html tags:
 <div></div>
 <span></span>
 <br>
-<hr> 
+<hr>
+<img>
 
-Ok, so that's 11 but 10 sounds better!
+
 
 Styles
 background, color, images
