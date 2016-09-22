@@ -27,6 +27,51 @@ HTML is static --> it doesn't "do" anything. JavaScript does stuff to HTML.
 JavaScript "happens" with an HTML tag --> <script></script> 
 You may see some examples with a "type" attribute (text/javascript), but this is not needed or expected in HTML5
 
+Step 1:
+	  <script> 
+        var yourName = prompt('Why Hello there. What is your name?');
+        document.getElementById('js').innerHTML = "<h2>Hello there " + yourName + "</h2";
+      </script>
+      
+Step 2:
+	convert code into a function:
+	<script> 
+        var changeName = function(){
+        var yourName = prompt('Why Hello there. What is your name?');
+        document.getElementById('js').innerHTML = "<h2>Hello there " + yourName + "</h2";
+        };
+    </script>
+    
+Step 3:
+	add button to webpage first section:
+	<button type="button" onclick="changeName()" style="font-size:14pt;">Click me!</button>
+	
+Step 4: 
+ add code after document.getEle...:
+ 	setTimeout(function(){ var answer = confirm("Do you want to see the time?");
+    
+        function time(){
+          if (answer) {
+            document.getElementById('time').innerHTML = "<h3>" + Date()+ "</h3>";
+          } else{
+            document.getElementById('time'). innerHTML = yourName + " is no fun!"
+          }
+          setTimeout(function(){time()},500);
+        };
+                              
+        time();  
+        }, 500);
+		    
+      
+
+
+Links:
+
+http://www.colorcombos.com/grabcolors.html
+https://fount.artequalswork.com/
+
+
+
 
 
 

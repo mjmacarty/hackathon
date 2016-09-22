@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Second Page</title>
+      <link type="text/css" rel="stylesheet" href="style.css">
+      
+        
+    </head>
+    
+    <body>
+      <div id="content">
+        <section>
+          <h1>Working with Javascript</h1>
+          <p>HTML is for content, CSS is for Presentation and Javascript is for interaction. Most of the action we see in web pages is the result of JavaScript. Here is a quick demonstration of JavaScript.</p>
+          <button type="button" style="font-size:16pt;" onclick="changeName()">Click me!</button>
+        </section>
+        <section>
+          <h1>JavaScript Demo</h1>
+          <div id="js">[JavaScript Demo]</div>
+          <div id="time"></div>
+        </section>
+        <section>
+          <h1><a href="firstpage.html">Link back</a></h1>
+        </section>
+      </div>  
+    </body>
+  
+      <script> 
+        var changeName = function(){
+        var yourName = prompt('Why Hello there. What is your name?');
+        document.getElementById('js').innerHTML = "<h3>Hello there " + yourName + "</h3";
+        setTimeout(function(){ var answer = confirm("Do you want to see the time?");
+    
+        function time(){
+          if (answer) {
+            document.getElementById('time').innerHTML = "<h3>" + Date()+ "</h3>";
+          } else{
+            document.getElementById('time'). innerHTML = yourName + " is no fun!"
+          }
+          setTimeout(function(){time()},500);
+        };
+                              
+        time();  
+        }, 500);
+        
+        };
+        
+      </script>
+</html>
